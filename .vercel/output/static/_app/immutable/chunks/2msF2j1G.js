@@ -1,1 +1,0 @@
-const s={sessionStarted(){},connectionMade(e,n=!1){},webrtcConnected(e){},webrtcFallback(e="unknown"){e.substring(0,20)},messageSent(e,n=null){},imageShared(e,n=!1){},error(e,n="unknown"){e.substring(0,30),n.substring(0,20)},sessionEnded(e){t()}};async function t(){}window.addEventListener("beforeunload",()=>{const e=Date.now()-Date.now();s.sessionEnded(e)});export{s as a};

@@ -1,9 +1,11 @@
-node_modules
+node_modules/
 .env
 .env.local
 .env.production
 build/
 .svelte-kit/
+.vercel/
 dist/
 *.log
 .DS_Store
+package-lock.json
