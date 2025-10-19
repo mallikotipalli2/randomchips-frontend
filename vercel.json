@@ -3,12 +3,6 @@
   "framework": "sveltekit",
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "functions": {
-    "build/server/**": {
-      "memory": 512,
-      "maxDuration": 10
-    }
-  },
   "headers": [
     {
       "source": "/(.*)",
@@ -32,7 +26,7 @@
       ]
     },
     {
-      "source": "/service-worker.mjs",
+      "source": "/service-worker.js",
       "headers": [
         {
           "key": "Cache-Control",
