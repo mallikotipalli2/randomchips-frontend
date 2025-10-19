@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+}
+
+.dark {
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --border: #374151;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.chat-bubble-self {
+  @apply bg-brand-blue text-white rounded-lg px-4 py-2 max-w-xs ml-auto;
+}
+
+.chat-bubble-other {
+  @apply bg-brand-green text-white rounded-lg px-4 py-2 max-w-xs mr-auto;
+}
+
+.btn-primary {
+  @apply bg-brand-green hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply bg-brand-blue hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200;
+}
+
+.btn-danger {
+  @apply bg-brand-red hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200;
+}
+
+.btn-info {
+  @apply bg-brand-teal hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200;
+}
